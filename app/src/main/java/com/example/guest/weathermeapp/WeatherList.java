@@ -20,9 +20,9 @@ public class WeatherList extends AppCompatActivity {
         setContentView(R.layout.activity_weather_list);
 
         Intent intent = getIntent();
-        String location = intent.getStringExtra("location");
+        String zip = intent.getStringExtra("zip");
 
-        getWeather(location);
+        getWeather(zip);
     }
 
     private void getWeather(String location) {
