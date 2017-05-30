@@ -18,6 +18,7 @@ public class WeatherService {
         HttpUrl.Builder urlBuilder = HttpUrl.parse(Constants.API_BASE_URL).newBuilder();
         urlBuilder.addQueryParameter(Constants.YOUR_QUERY_PARAMETER, zip);
         urlBuilder.addQueryParameter(Constants.API_KEY_QUERY_PARAMETER, Constants.API_KEY);
+        urlBuilder.addQueryParameter(Constants.API_KEY_QUERY_IMPERIAL, Constants.API_KEY_IMPERIAL);
         String url = urlBuilder.build().toString();
 
         Log.d("url", url);
